@@ -1,0 +1,107 @@
+/* header*/
+.header{
+  position: fixed;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  display: flex;
+  z-index: 4;
+    @media screen and (max-width: 768px) {
+        height: 60px;
+    }
+  &-logo{
+    position: relative;
+    width: 30%;
+    text-align: center;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+    }
+  }
+  img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-menu{
+    position: relative;
+    width: 40%;
+    text-align: center;
+        @media screen and (max-width: 768px) {
+        display: none;
+    }
+    ul{
+      display: inline-flex;
+    }
+    li{
+      position: relative;
+      margin-right: 30px;
+      height: 70px;
+      transition: all ease 1s;
+      border-bottom:4px solid transparent;
+      &:hover{
+        border-bottom:4px solid;
+        border-image-source: linear-gradient(to right, hsl(136, 65%, 51%) 0%,hsl(192, 70%, 51%) 100%);
+        border-image-slice: 1;
+        cursor: pointer;
+      }
+    }
+    p {
+      position: relative;
+      font-size: 18px;
+      width: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover{
+        color:black;
+      }
+    }
+    
+  }
+  &-btn{
+    position: relative;
+    width: 30%;
+    text-align: center;
+        @media screen and (max-width: 768px) {
+      width: 48%;
+      text-align: right;
+
+      }
+    button{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+  }
+}
+#mobile-menu-close{
+    position: relative;
+      top: -40%;
+      transform: translateX(-50%);
+    @media screen and (max-width: 768px) {
+      top: 40%;
+      }
+}
+#mobile-menu-open{
+    position: relative;
+      top: -40%;
+      transform: translateX(-50%);
+    @media screen and (max-width: 768px) {
+      top: 40%;
+      }
+}
+.btn-site button{
+  font-size: 18px;
+  border-radius: 50px; 
+  border-color: transparent;
+  background: linear-gradient(to right, hsl(136, 65%, 51%) 0%,hsl(192, 70%, 51%) 100%);
+  width: 160px;
+  height: 45px;
+  color: white;
+  &:hover{
+    background: linear-gradient(to right, hsl(136, 65%, 68%) 20%,hsl(192, 70%, 68%) 80%);
+    cursor: pointer;
+  }
+}

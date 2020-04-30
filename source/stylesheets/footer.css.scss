@@ -1,0 +1,91 @@
+/*FOOTER*/
+
+.footer{
+  background-color: hsl(233, 26%, 24%);
+  position: relative;
+  width: 100%;
+  height: 200px;
+       @media screen and (max-width: 768px) {
+        height: 550px;
+    }
+  &-wrapper{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+     @media screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+    }
+  }
+  &-logo-social{
+    position: relative;
+    width: 25%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  }
+  &-menu{
+    color: white;
+    position: relative;
+    width: 15%;
+    line-height: 2;
+       @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+  }
+  &-btn{
+    position: relative;
+    width: 45%;
+    text-align: right;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+    }
+    p{
+      position: relative;
+      margin-top: 40px;
+    }
+  }
+  &-section{
+    position: relative;
+    height: 50%;
+    top:50%;
+    transform: translateY(-50%);
+      @media screen and (max-width: 768px) {
+        top: 15%;
+        height: 100px;
+    }
+    li:hover{
+      color:rgb(120,206,117);
+      cursor: pointer;
+    }
+  }
+}
+.social-icons{
+  position: relative;
+  margin-top: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        width: 70%;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+  img:hover{
+  cursor: pointer;
+  }
+}
+.attribution{
+        @media screen and (max-width: 768px) {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 9px;
+    }
+}
